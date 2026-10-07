@@ -830,7 +830,7 @@ class Vehicle(object):
         if callable(base_aero_coeffs):
             pass
         else:
-            base_aero_coeff_vals = np.array(base_aero_coeffs, dtype=np.float_).reshape(
+            base_aero_coeff_vals = np.array(base_aero_coeffs, dtype=np.float64).reshape(
                 -1
             )
             if base_aero_coeff_vals.size == 1:
@@ -842,7 +842,7 @@ class Vehicle(object):
             pass
         else:
             input_aero_coeff_vals = np.array(
-                input_aero_coeffs, dtype=np.float_
+                input_aero_coeffs, dtype=np.float64
             ).reshape(-1)
             if input_aero_coeff_vals.size == 1:
                 input_aero_coeff_vals = np.tile(input_aero_coeff_vals, 9)
@@ -853,7 +853,7 @@ class Vehicle(object):
             pass
         else:
             input_force_moment_vals = np.array(
-                input_force_moment, dtype=np.float_
+                input_force_moment, dtype=np.float64
             ).reshape(-1)
             if input_force_moment_vals.size == 1:
                 input_force_moment_vals = np.tile(input_force_moment_vals, 6)

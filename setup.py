@@ -22,9 +22,9 @@ setup(
     license="NASA Open Source Agreement Version 1.3",
     python_requires=">=3",
     install_requires=[
-        "numpy>=1.11.3,<2",
+        "numpy>=1.11.3",
         "scipy>=0.18.1",
-        "simupy>=1.1.2",
+        "simupy>=1.1.1",  # numpy 2 needs simupy git master (reports 1.1.1; PyPI 1.1.2 predates the fix)
         "pyerfa",
         "fluids",
     ],
